@@ -1,0 +1,41 @@
+.sectionHome {
+	background: url('../images/section-home/background.png') center no-repeat;
+	background-size: cover;
+	padding: 0;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0, 0, 0, .45);
+		z-index: 1;
+	}
+	&__container {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 2;
+	}
+	&__caption {
+		text-align: center;
+	}
+	&__title {
+		color: white;
+	}
+	&__text {
+		color: white;
+		font-size: 18px;
+		margin-bottom: 45px;
+	}
+	&__link {
+		color: white !important;
+		border-color: white;
+		&:hover {
+			background-color: white;
+			color: @color_1 !important;
+		}
+	}
+}

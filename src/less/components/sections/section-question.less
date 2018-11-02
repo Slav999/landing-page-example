@@ -1,0 +1,25 @@
+.sectionQuestion{
+	background: url('../images/section-question/question.png') center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.question__title{
+	color: #fff;
+	font-size: 30px;
+	position: relative;
+  z-index: 2;
+}
+.section__caption a{
+	position: relative;
+  z-index: 2;
+}
+.sectionQuestion::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(224,67,40,.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}

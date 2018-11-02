@@ -1,0 +1,60 @@
+.header {
+	padding: 30px 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 3;
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+	&Logo {
+		a {
+			font-size: 27px;
+			color: white;
+			text-decoration: none;
+			font-weight: 600;
+		}
+	}
+	&Menu {
+		margin-left: auto;
+		overflow: hidden;
+		@media (max-width:960px) {
+			display: none;
+		}
+		ul>li {
+			margin-right: 30px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+	&Language{
+		margin-left: 50px;
+		overflow: hidden;
+		@media (max-width:960px) {
+			display: none;
+		}
+		ul>li {
+			margin-right: 20px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 12px;
+			font-weight: 300;
+			padding: 5px;
+			border: 1px solid #fff;
+		}
+	}
+}
